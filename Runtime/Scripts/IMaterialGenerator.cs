@@ -25,6 +25,12 @@ namespace GLTFast {
         /// <returns>fallback material</returns>
         UnityEngine.Material GetDefaultMaterial();
 
+        /// <summary>
+        /// Get fallback material that is assigned to point clouds without a material.
+        /// </summary>
+        /// <returns>fallback material</returns>
+        UnityEngine.Material GetDefaultPointsMaterial();
+
         UnityEngine.Material GenerateMaterial(
             Material gltfMaterial,
             ref Schema.Texture[] textures,

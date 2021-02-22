@@ -84,6 +84,10 @@ namespace GLTFast.Materials {
             return GetMetallicMaterial(MetallicShaderFeatures.Default);
         }
 
+        public override Material GetDefaultPointsMaterial() {
+            return GetUnlitMaterial();
+        }
+
         Material GetMetallicMaterial( MetallicShaderFeatures metallicShaderFeatures ) {
             
             bool doubleSided = (metallicShaderFeatures & MetallicShaderFeatures.DoubleSided) != 0;

@@ -91,6 +91,8 @@ namespace GLTFast.Materials {
 
         public abstract UnityEngine.Material GetDefaultMaterial();
 
+        public abstract UnityEngine.Material GetDefaultPointsMaterial();
+
         public abstract UnityEngine.Material GenerateMaterial(
             Schema.Material gltfMaterial,
             ref Schema.Texture[] textures,
