@@ -1724,7 +1724,6 @@ namespace GLTFast {
                 c.topology = MeshTopology.Triangles;
                 break;
             case DrawMode.Points:
-                Debug.LogErrorFormat(ErrorUnsupportedPrimitiveMode,primitive.mode);
                 c.topology = MeshTopology.Points;
                 break;
             case DrawMode.Lines:
